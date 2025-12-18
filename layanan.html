@@ -42,90 +42,97 @@
   </script>
 
   <style>
-    body{
-      font-family:Arial,Helvetica,sans-serif;
-      margin:0;
-      background:#f4f6f8;
-      color:#333;
-      line-height:1.6;
-    }
-    header{
-      background:#0f766e;
-      color:#fff;
-      padding:30px 20px;
-      text-align:center;
-    }
-    header img{
-      max-width:120px;
-      margin-bottom:10px;
-    }
-    section{
-      padding:40px 20px;
-      max-width:1000px;
-      margin:30px auto 0;
-      background:#fff;
-      border-radius:12px;
-      box-shadow:0 6px 20px rgba(0,0,0,.06);
-    }
-    h1,h2{
-      color:#0f766e;
-      margin-top:0;
-    }
-    ul{
-      list-style:none;
-      padding:0;
-    }
-    ul li{
-      margin-bottom:10px;
-      padding-left:26px;
-      position:relative;
-    }
-    ul li::before{
-      content:"✔";
-      position:absolute;
-      left:0;
-      color:#16a34a;
-      font-weight:bold;
-    }
-    .paket{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-      gap:20px;
-      margin-top:20px;
-    }
-    .card{
-      border:1px solid #ddd;
-      border-radius:12px;
-      padding:20px;
-      background:#fafafa;
-    }
-    .card h3{
-      margin-top:0;
-      color:#0f766e;
-    }
-    .btn{
-      display:inline-block;
-      margin-top:20px;
-      padding:12px 22px;
-      background:#0f766e;
-      color:#fff;
-      text-decoration:none;
-      border-radius:8px;
-      font-weight:bold;
-    }
-    footer{
-      text-align:center;
-      padding:25px;
-      margin-top:40px;
-      background:#0f766e;
-      color:#fff;
-      font-size:14px;
-    }
-    a{
-      color:#0f766e;
-      font-weight:bold;
-      text-decoration:none;
-    }
+/* ===== GLOBAL ===== */
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin:0;
+  background:#f4f6f8;
+  color:#333;
+  line-height:1.6;
+}
+
+/* ===== HEADER / HERO ===== */
+header{
+  background: linear-gradient(135deg, #0f766e, #115e59);
+  color:#fff;
+  padding:60px 20px 70px;
+  text-align:center;
+}
+
+header img{
+  width:100%;
+  max-width:320px;   /* LOGO/BANNER BESAR */
+  height:auto;
+  margin:0 auto 20px;
+  display:block;
+}
+
+header h1{
+  font-size:28px;
+  margin:10px 0 8px;
+  font-weight:bold;
+}
+
+header p{
+  font-size:16px;
+  opacity:0.95;
+}
+
+/* ===== SECTION ===== */
+section{
+  padding:30px 20px;
+  max-width:1000px;
+  margin:25px auto 0;
+  background:#fff;
+  border-radius:14px;
+  box-shadow:0 8px 20px rgba(0,0,0,.06);
+}
+
+h2{
+  color:#0f766e;
+  margin-top:0;
+}
+
+/* ===== LIST CHECK ===== */
+ul{
+  list-style:none;
+  padding:0;
+}
+
+ul li{
+  margin-bottom:10px;
+}
+
+ul li::before{
+  content:"✔ ";
+  color:#22c55e;
+  font-weight:bold;
+}
+
+/* ===== GRID PAKET ===== */
+.paket{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+  gap:20px;
+  margin-top:20px;
+}
+
+.card{
+  border:1px solid #e5e7eb;
+  border-radius:12px;
+  padding:20px;
+  background:#fafafa;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  text-align:center;
+  padding:25px;
+  margin-top:40px;
+  background:#0f766e;
+  color:#fff;
+  font-size:14px;
+}
   </style>
 </head>
 
